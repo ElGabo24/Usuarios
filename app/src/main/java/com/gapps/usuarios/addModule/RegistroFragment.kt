@@ -241,7 +241,7 @@ class RegistroFragment : Fragment() {
                 telefono = mBinding.etTelefono.text.toString().toLong()
                 latitud = mBinding.txtLat.text.toString().trim()
                 longitud = mBinding.txtLng.text.toString().trim()
-                photoImg = imageUri?.let { ImageController.savImage(requireContext(), id, it) }.toString()
+                photoImg = imageUri?.let { ImageController.savImage(requireContext(), mUserEntity.id, it) }.toString().trim()
             }
                 mAddViewModel.saveUser(mUserEntity)
         }

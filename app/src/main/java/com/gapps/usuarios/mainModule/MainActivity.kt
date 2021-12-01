@@ -1,11 +1,9 @@
 package com.gapps.usuarios.mainModule
 
-import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -14,11 +12,10 @@ import com.gapps.usuarios.addModule.RegistroFragment
 import com.gapps.usuarios.addModule.viewModel.AddViewModel
 import com.gapps.usuarios.common.entities.UserEntity
 import com.gapps.usuarios.databinding.ActivityMainBinding
-import com.gapps.usuarios.mainModule.adapter.OnClickListener
 import com.gapps.usuarios.mainModule.adapter.UserAdapter
 import com.gapps.usuarios.mainModule.viewModel.MainViewModel
 
-class MainActivity : AppCompatActivity(), OnClickListener {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var mBinding: ActivityMainBinding
 
@@ -40,7 +37,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
     }
 
     private fun setupRecyclerView() {
-        mAdapter = UserAdapter(mutableListOf(), this)
+        mAdapter = UserAdapter(mutableListOf())
         mLinearLayoutManager = LinearLayoutManager(this)
 
         mBinding.recyclerView.apply {
@@ -92,7 +89,4 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 
     }
 
-    override fun onClick(userEntity: UserEntity) {
-        TODO("Not yet implemented")
-    }
 }

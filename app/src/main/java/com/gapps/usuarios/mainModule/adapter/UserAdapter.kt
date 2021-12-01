@@ -10,7 +10,7 @@ import com.gapps.usuarios.R
 import com.gapps.usuarios.common.entities.UserEntity
 import com.gapps.usuarios.databinding.UserItemBinding
 
-class UserAdapter(private var users: MutableList<UserEntity>, private var listener: OnClickListener) :
+class UserAdapter(private var users: MutableList<UserEntity>) :
     RecyclerView.Adapter<UserAdapter.ViewHolder>(){
 
     private lateinit var mContext: Context
@@ -28,7 +28,6 @@ class UserAdapter(private var users: MutableList<UserEntity>, private var listen
         val user = users[position]
 
         with(holder){
-            setListener(user)
 
             binding.txtRegistro.text = "Registro: ${user.id}"
             binding.txtNombre.text = user.getFullName()
@@ -57,11 +56,6 @@ class UserAdapter(private var users: MutableList<UserEntity>, private var listen
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val binding = UserItemBinding.bind(view)
-
-        fun setListener(userEntity: UserEntity){
-            binding.root.setOnClickListener{listener.onClick(userEntity)}
-
-        }
 
     }
 
