@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="counter_max_name">40</integer>
+    <integer name="counter_max_phone">10</integer>
+    <integer name="counter_max_correo">50</integer>
+
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cardview_height">130dp</dimen>
+    <dimen name="padding_common_default">16dp</dimen>
+    <dimen name="padding_common_min">8dp</dimen>
+</resources>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Usuarios</string>
+
+    <string name="nombre">Nombre:</string>
+    <string name="helper_required">Requirido</string>
+    <string name="apellidos">Apellidos:</string>
+    <string name="numero_telefonico">Numero de Telefono:</string>
+    <string name="correo">Correo Electrónico:</string>
+    <string name="coordenadas">Coordenadas:</string>
+    <string name="image_of_the_user">Image of the user</string>
+    <string name="registrar">Registrar</string>
+    <string name="message_save_success">Usuario agregado correctamente</string>
+    <string name="register_message_valid">Revise los campos requeridos.</string>
+    <string name="valid_correo">Inserta un correo electronico valido</string>
+    <string name="telefono_digitos">Ingrese los 10 digitos de su numero telefonico</string>
+    <string name="guardar">GUARDAR</string>
+    <string name="ubicar_coordenadas">COORDENADAS</string>
+    <string name="registrar_datos">Registrar Usuario</string>
+    <string name="latitud">Latitud:</string>
+    <string name="longitud">Longitud:</string>
+</resources>
